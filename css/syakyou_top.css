@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width: 960px;
+    text-align: center;
+
+}
+
+.loop {
+    
+display: flex;
+width: 100vw;
+height: 300px;
+overflow: hidden;
+}
+.loop img{
+
+    width: auto;
+    height:100%;
+
+}
+

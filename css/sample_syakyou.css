@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width: 960px;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.header_img{
+width: 30%;
+
+}
+
+.header-p {
+	overflow: hidden;
+	display: flex;
+}
+
+.header_gazou{
+	display: flex;
+}
+
+.header_gazou img {
+	height: 200px; /* スライダーの高さ */
+	width: auto;
+}
+
+@keyframes header_gazou {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes header_gazou2 {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+.header_gazou:first-child {
+	animation: header_gazou 60s -30s linear infinite; /* スライダーの速度（２番目の数字は１番目の数字の半分にします） */
+}
+
+.header_gazou:last-child {
+	animation: header_gazou2 60s linear infinite; /* 60sの部分は上の数字と同じ */
+}
+
+
+.main_btn {
+width: 960px;
+}
+
+.main_btn img{
+object-fit: cover;
+    width:33.33333%;
+}
+
+.modoru {
+    
+display: flex;
+width: 100vw;
+height: 100px;
+overflow: hidden;
+}
+
+
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid white;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+     
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
